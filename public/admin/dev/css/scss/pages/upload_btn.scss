@@ -1,0 +1,153 @@
+.upload-image-section{
+	.show-section{
+	    display: inline-block;
+	    width: 100%;
+	    clear: both;
+	}
+	.single-file{
+	    padding: 10px 10px;
+	    border: 1px solid #ececec;
+	    border-radius: 6px;
+	    padding-right: 25px;
+	    margin-top: 5px;
+	    width: 100%;
+	    display: inline-block;
+	    &:not(:last-child){
+		    margin-bottom: 5px;
+		}
+		a{
+		    font-size: 14px;
+		    color: #525f7f;
+		    &:nth-child(1){
+		    	i{
+				    margin-right: 10px;
+				}
+		    }
+		}
+	}
+	.single-cross{
+		&.file{
+		    float: right;
+		    vertical-align: middle;
+		    color: #E87816;
+		    display: inline-block;
+		    line-height: initial;
+		    font-size: 17px;
+		    margin-right: -20px;
+		}
+	}
+	.single-image{
+	    border: 1px solid #ececec;
+	    border-radius: 6px;
+	    margin-top: 5px;
+	    width: 100px;
+	    height: 100px;
+	    overflow: hidden;
+	    position: relative;
+	    float: left;
+	    margin-right: 5px;
+	    img{
+	        width: 100%;
+	        height: 100%;
+	        object-fit: cover;
+	    }
+	    .single-cross{
+	    	&.image{
+		        position: absolute;
+		        right: 5px;
+		        top: 5px;
+		        background-color: white;
+		        width: 20px;
+		        height: 20px;
+		        text-align: center;
+		        border-radius: 50%;
+		        line-height: 22px;
+		        font-size: 13px;
+		        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+		    }
+	    }
+	    .video_play{
+	    	position: absolute;
+    	    top: 50%;
+    	    z-index: 111111;
+    	    display: block;
+    	    height: 20px;
+    	    width: 20px;
+    	    background: $white;
+    	    border-radius: 50%;
+    	    color: $black;
+    	    font-size: 9px;
+    	    text-align: center;
+    	    line-height: 20px;
+    	    left: 0;
+    	    right: 0;
+    	    margin-left: auto;
+    	    margin-right: auto;
+    	    margin-top: -10px;
+	    }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+	
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+	
+}
+
+@media (min-width: 1280px) and (max-width: 1399px) {
+	
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

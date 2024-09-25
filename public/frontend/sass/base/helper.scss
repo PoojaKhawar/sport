@@ -1,0 +1,124 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+
+
+.loader_area {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $white; 
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	.loader1 {
+	  display: inline-block;
+	  font-size: 0;
+	  padding: 0;
+
+	  span {
+	    vertical-align: middle;
+	    border-radius: 100%;
+	    display: inline-block;
+	    width: 10px;
+	    height: 10px;
+	    margin: 3px 2px;
+	    animation: loader1 0.8s linear infinite alternate;
+	    
+	    &:nth-child(1) {
+	      animation-delay: -1s;
+	      background: rgba(102, 160, 193, 0.6);
+	    }
+	    &:nth-child(2) {
+	      animation-delay: -0.8s;
+	      background: rgba(102, 160, 193, 0.8);
+	    }
+	    &:nth-child(3) {
+	      animation-delay: -0.26666s;
+	      background: rgba(102, 160, 193, 1);
+	    }
+	    &:nth-child(4) {
+	      animation-delay: -0.8s;
+	      background: rgba(102, 160, 193, 0.8);
+	    }
+	    &:nth-child(5) {
+	      animation-delay: -1s;
+	      background: rgba(102, 160, 193, 0.4);
+	    }
+	  }
+	}
+}
+
+
+@keyframes loader1 {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes loader1 {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

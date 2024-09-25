@@ -1,0 +1,153 @@
+.cursor_pointer{
+	cursor: pointer;
+}
+
+.admin_loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1089;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(67, 89, 113, 0.5);
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    @include transition(all .5s ease);
+    &.show{
+    	opacity: 1;
+    	display: flex;
+    	z-index: 9999;
+    }
+}
+
+.file_list{
+    margin: 15px 0;
+    a{
+        display: block;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        span{
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            line-height: 40px;
+            color: $white;
+            margin-top: -20px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.att_icon{
+    img{
+        width: 20px;
+    }
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+   background-color: #b2e6cc;
+}
+
+.bg-pink{
+    --bs-bg-opacity: 1;
+    background-color: #e75480 !important;
+}
+
+.bg-purple{
+    --bs-bg-opacity: 1;
+    background-color: #b200ed !important;
+}
+
+.bg-success{
+    --bs-bg-opacity: 1;
+    background-color: #228b22 !important;
+}
+
+.bg-purple1{
+    --bs-bg-opacity: 1;
+    background-color: #81007F !important;
+}
+
+.bg-brown{
+    --bs-bg-opacity: 1;
+    background-color: #7b3f00 !important;
+}
+
+.bg-sky{
+    --bs-bg-opacity: 1;
+    background-color: #398FC7 !important;
+}
+
+.bg-blue-green{
+    --bs-bg-opacity: 1;
+    background-color: #3CACAE !important;
+}
+
+.bg-blue-grey{
+    --bs-bg-opacity: 1;
+    background-color: #287686 !important;
+}
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px){
+    
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px){
+    
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px){
+    
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+	
+}

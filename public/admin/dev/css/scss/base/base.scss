@@ -1,0 +1,309 @@
+.no_event{
+    pointer-events: none;
+}
+
+.callout{
+	&.callout-success{
+		border-left-color: #1e7e34;
+	    background-color: #28a745;
+	    color: #fff;
+	}
+    &.callout-danger{
+        border-left-color: #bd2130;
+        background-color: #d72d3e;
+        color: #fff;
+    }
+}
+
+.alert{
+	padding-right: 30px;
+	&.alert-success{
+		border-left-color: #1e7e34;
+	    background-color: #28a745;
+	    color: #fff;
+	}
+    &.alert-danger{
+        border-left-color: #bd2130;
+        background-color: #d72d3e;
+        color: #fff;
+    }
+    .btn{
+    	&.close{
+    		margin: 0;
+    		padding: 0;
+    		height: 20px;
+    		width: 20px;
+    		font-size: 28px;
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+		    line-height: 17px;
+		    margin-top: 15px;
+		    margin-right: 13px;
+		    color: #fff;
+    	}
+    }
+}
+
+/* Boostrap alert box */
+.bootbox{
+	z-index: 99996;
+	&.modal{
+		&.bootbox-confirm{
+			overflow-x: hidden;
+			overflow-y: auto;
+			.modal-dialog{
+				display: flex;
+				height: 90%;
+				width: 400px;
+				max-width: 96%;
+				.modal-content{
+					border: 0;
+					border-radius: 0;
+					box-shadow: none;
+					background-color: $black2;
+					position: relative;
+					margin-top: auto;
+					margin-bottom: auto;
+					@include box_shaddow(3px, 0.5);
+					.bootbox-close-button{
+						position: absolute;
+						top: 0;
+						right: 0;
+						color: $white;
+
+						display: inline-block;
+					    text-align: center;
+					    text-decoration: none;
+					    vertical-align: middle;
+					    cursor: pointer;
+					    -webkit-user-select: none;
+					    -moz-user-select: none;
+					    user-select: none;
+					    background-color: transparent;
+					    border: 0;
+					    font-size: 50px;
+					    height: 40px;
+					    width: 40px;
+					    line-height: 40px;
+					    margin-top: 10px !important;
+					    margin-right: 18px;
+					}
+					.modal-header{
+						margin: 0;
+						padding: 20px 30px;
+						border-bottom: 1px solid #d7d7d7;
+						.modal-title{
+						    color: $white;
+						    font-weight: 400;
+						    font-size: 18px;
+						}
+					}
+					.modal-body{
+						position: relative;
+						.bootbox-body{
+							color: $white;
+							font-size: 16px;
+							text-align: center;
+							padding: 30px 0;
+							.icon_box{
+								padding-bottom: 30px;
+								text-align: center;
+								.inner_icon_box{
+									color: $red;
+									i{
+										font-size: 40px;
+									}
+								}
+							}
+						}
+					}
+					.modal-footer{
+		                margin: 0;
+		                padding: 0px 30px 30px 30px;
+		                border: 0;
+		                display: block;
+		                @include clearfix();
+		                .left_btn{
+		                    float: left;
+		                    margin: 0;
+		                }
+		                .right_btn{
+		                    margin: 0;
+		                    float: right;
+		                }
+		                .btn{
+		                    width: 160px;
+		                    height: 46px;
+		                    margin: 0;
+		                    padding: 0;
+		                    text-align: center;
+		                    line-height: 46px;
+		                    &.btn-success{
+		                    	background-color: $green;
+		                    	border-color: $green;
+		                    	&:hover, &:focus{
+		                    		border-color: darken($green, 10%);
+		                    		background-color: darken($green, 10%);
+		                    	}
+		                    }
+		                }
+		            }
+				}
+			}
+		}
+		&.bootbox-alert{
+			@extend .bootbox-confirm;
+			.modal-dialog{
+				.modal-content{
+					.modal-footer{
+						.btn{
+							width: 100%;
+						}
+					}
+				}
+			} 
+		}
+	}
+}
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+	.bootbox{
+		&.modal{
+			&.bootbox-confirm{
+				.modal-dialog{
+					.modal-content{
+						.modal-footer{
+							padding: 0px 20px 20px 20px;
+							.btn{
+								width: 140px;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	.bootbox{
+		&.modal{
+			&.bootbox-alert{
+				.modal-dialog{
+					.modal-content{
+						.modal-footer{
+							padding: 0px 20px 20px 20px;
+							.btn{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	.bootbox{
+		&.modal{
+			&.bootbox-confirm{
+				.modal-dialog{
+					.modal-content{
+						.modal-footer{
+							padding: 0px 20px 20px 20px;
+							.btn{
+								width: 135px;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	.bootbox{
+		&.modal{
+			&.bootbox-alert{
+				.modal-dialog{
+					.modal-content{
+						.modal-footer{
+							padding: 0px 20px 20px 20px;
+							.btn{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+	.bootbox{
+		&.modal{
+			&.bootbox-confirm{
+				.modal-dialog{
+					.modal-content{
+						.modal-footer{
+							padding: 0px 20px 20px 20px;
+							.btn{
+								width: 120px;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+	.bootbox{
+		&.modal{
+			&.bootbox-alert{
+				.modal-dialog{
+					.modal-content{
+						.modal-footer{
+							padding: 0px 20px 20px 20px;
+							.btn{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

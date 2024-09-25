@@ -1,0 +1,253 @@
+.text-right{
+	text-align: right;
+}
+
+.text-left{
+	text-align: left;
+}
+
+
+.btn{
+	&.btn-default{
+		background-color: $white;
+		color: $primary_color;
+		font-weight: 500;
+		box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.1);
+		min-height: 40px;
+		line-height: 40px;
+		padding: 0px 20px;
+		&:hover{
+			transform: translateY(-1px);
+		}
+	}
+	&.active{
+		background-color: #e91e63;
+		color: #fff;
+	}
+}
+
+.header_background{
+	background-color: $primary_color;
+	padding-top: 5px;
+	.layout-navbar{
+		background-color: transparent !important;
+		backdrop-filter: none;
+		border-bottom: 1px solid rgba(255, 255, 255, .08);
+		height: auto;
+		padding-bottom: 15px;
+	}
+}
+
+.header-body{
+	padding-top: 25px;
+	background-color: $primary_color;
+	padding-bottom: 100px;
+	.left_area{
+		h6{
+			color: $white;
+			font-size: 22px;
+		}
+	}
+	.right_area{
+		.dropdown-bottom{
+			padding: 8px 20px;
+		}
+		.closeit{
+			margin-top: 5px;
+			margin-right: 10px;
+			font-size: 18px;
+		}
+	}
+	.button_area{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+.content_area{
+	margin-top: -100px;
+}
+
+
+.toast{
+	&.bg-danger{
+		background-color: $red !important;
+	}
+	&.bg-success{
+		background-color: $green !important;
+	}
+	&.bg-primary{
+		background-color: $primary !important;
+	}
+}
+
+.filter-dot {
+    animation: zoom-in-zoom-out 1s ease infinite;
+    display: inline-block;
+}
+
+.bg-menu-theme .menu-inner > .menu-item.active:before{
+	display: none;
+}
+
+.cke_reset_all a{
+	.fas,.far{
+		font-family: "Font Awesome 5 Pro" !important;
+	}
+}
+
+
+
+.form-select{
+	&.font-awesome{
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 900;
+		option{
+			font-weight: 900;
+		}
+	}
+}
+.append_addons_html{
+	@include clearfix();
+	margin-bottom: 15px;
+	.add_addons_with_options{
+		@include clearfix();
+		.add_addons_dashed{
+			@include clearfix();
+			.add_menu_options_fields{
+				@include clearfix();
+				padding: 15px 15px 0px 15px;
+				margin-bottom: 15px;
+				.custom_group_option{
+					float: left;
+					width: 100%;
+					.left_options_form{
+						float: left;
+						width: calc(100% - 50px);
+						.form-group{
+							.form-control{
+								height: 40px !important; 
+							}
+						}
+						.left_f_group{
+							float: left;
+							width: calc(50% - 7px);
+						}
+						.right_f_group{
+							float: right;
+							width: calc(50% - 7px);
+						}
+					}
+					.close_option{
+						width: 50px;
+						float: right;
+						padding-top: 2px;
+						a{
+							float: right;
+							display: inline-block;
+							height: 35px;
+							width: 35px;
+							color: $white;
+							text-align: center;
+							font-size: 18px;
+							line-height: 35px;
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.create_add_more_option{}
+	&.membership_html{
+		.add_addons_with_options{
+			.add_addons_dashed{
+				.add_menu_options_fields{
+					.custom_group_option{
+						border-top: 1px solid #d9dee3;
+						padding-top: 25px;
+						margin-top: 10px;
+						border-top-style: dashed;
+						&:nth-of-type(1){
+							border: 0;
+							padding-top: 0;
+							margin-top: 0;
+						}
+						.left_options_form{
+							.left_f_group{
+								//width: 100%;
+								width: calc(33.33% - 7px);
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#filteredMessage{
+	h3{
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+	
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+	
+}
+
+@media (min-width: 1280px) and (max-width: 1399px) {
+	
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

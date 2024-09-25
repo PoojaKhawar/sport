@@ -1,0 +1,159 @@
+
+table{
+	tr{
+		/* th{
+			white-space: normal;
+			word-break: break-word;
+		} */
+		/* td{
+			white-space: normal;
+			word-break: break-word;
+		} */
+	}
+	tfoot{
+		tr{
+			th{
+				border: 0;
+			}
+		}
+	}
+}
+
+
+.employees_attendance_table{
+	.employees_attendance_table_fix{
+		th:first-child, td:first-child
+		{
+			position:sticky;
+			left:0px;
+			background-color: $white;
+		}
+	}
+}
+
+.table{
+	.thead-light{
+		th{
+			color: #8898aa;
+			background-color: #f6f9fc;
+			border-bottom: 0px solid #e9ecef;
+			border-top: 1px solid #e9ecef;
+			vertical-align: middle;
+			.form-check{
+				.form-check-input{
+					height: 19px;
+					width: 19px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	& > :not(:first-child){
+		border-top: 1px solid #d9dee3;
+	}
+}
+
+.listing-block{
+	.table-responsive{
+		min-height: 600px;
+	}
+}
+
+.fz-12{
+	font-size: 12px !important;
+}
+
+
+
+.content_area{
+	&.employees_attendance{
+		.table{
+			tr{
+				td{
+					border: 1px solid #d7d7d7;
+				}
+				th{
+					border: 1px solid #d7d7d7;
+				}
+			}
+			.fa-check-circle{
+				color: $green;
+			}
+			.fa-times-circle{
+				color: $red;
+			}
+			.fa-star{
+				color: $yellow;
+			}
+		}	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+	
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+	
+}
+
+@media (min-width: 1280px) and (max-width: 1399px) {
+	
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}

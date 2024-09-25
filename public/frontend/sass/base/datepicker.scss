@@ -1,0 +1,94 @@
+@import "../base/variable.scss";
+@import "../base/mixins.scss";
+
+.datepicker{
+	z-index: 999999 !important;
+	&:before{
+		display: none;
+	}
+	&:after{
+		display: none;
+	}
+	table{
+		tr{
+			th{
+				border-bottom: 2px solid #ddd;
+				border-radius: 0;
+				height: 35px;
+				width: 35px;
+				font-size: 14px;
+			}
+			td{
+				border-top: 1px solid #ddd;
+				border-radius: 0;
+				height: 35px;
+				width: 35px;
+				font-size: 14px;
+				&.day{
+					&:hover{
+						background-color: $primary_color;
+						color: $white;
+					}
+					&.focused{
+						background-color: $primary_color;
+						color: $white;
+					}
+				}
+				&.today{
+					background-image: none;
+					background-color: $primary_color;
+					color: $white;
+					&:hover{
+						background-image: none;
+						background-color: $primary_color;
+						color: $white;
+						&:hover{
+							background-image: none;
+							background-color: $primary_color;
+							color: $white;
+						}
+					}
+					&.disabled{
+						background-image: none;
+						background-color: $primary_color;
+						color: $white;
+						&:hover{
+							background-image: none;
+							background-color: $primary_color;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.datepicker-days{
+	.table-condensed{
+		tbody{
+			tr{
+				td{
+					&.active{
+						background-image: none;
+						background-color: $secondary_color;
+					}
+					&.disabled{
+						background-color: transparent;
+						color: #999;
+						cursor: no-drop;
+						&:hover{
+							background-color: transparent;
+							color: #999;
+							cursor: no-drop;
+						}
+						&.day{
+							background-color: transparent !important;
+							color: #999 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

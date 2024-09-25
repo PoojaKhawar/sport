@@ -1,0 +1,398 @@
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+ .logo_image{
+margin: 0 auto;
+text-align: center;
+width: 125px;
+position: absolute;
+
+left: 0;
+right: 0;
+top: 0;} 
+.logo_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgset{
+    margin: 0 auto;
+    width: 900px;
+    max-width: 100%;
+}
+.imgset img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.not_found .image_area{
+    margin: 0 auto;
+    text-align: center;
+    width: 613.34px;
+    max-width: 100%;
+    margin-top: 90px;
+    margin-bottom: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    }
+.not_found .image_area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.done_msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.done_msg .contant_area{
+    height: 100%;
+    align-items: center;
+   
+    margin: 0 auto;
+     margin-top: 100px;
+    position: relative;
+}
+.done_msg .contant_area .icon{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(165, 206, 58, 0.2);
+    height: 70px;
+    width: 70px;
+    line-height: 75px;
+    border-radius: 50%;
+}
+
+.done_msg .content .icon i{
+    color: #A5CE3A;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.done_msg .content .icon.cross{
+    background-color: rgba(254, 76, 76, 0.2);
+}
+.done_msg .content .icon.cross i{
+    color: #FE4C4C;
+}
+.done_msg .contant_area .content{
+    text-align: center;
+    padding-top: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4%;
+    width: 518px;
+    margin: 0 auto;
+
+}
+.done_msg .contant_area .content h6{
+    font-size: 48px;
+    color: #000000;
+    font-weight: 600;
+    word-break: break-word;
+}
+.done_msg .contant_area .content p{
+    font-size: 14px;
+    color: #808080;
+    font-weight: 400;
+    padding-top: 20px;
+    width: 335px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    word-break: break-word;
+}
+.done_msg .contant_area .button{
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.done_msg .contant_area .button a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 15px 102px;
+    background-color: #0873BA;
+    box-shadow: 0px 4px 16px 0px #0873BA33;
+    border-radius: 20px;
+    font-weight: 400;
+}
+.done_msg .contant_area .button a:hover{
+    background-color: #0873BA;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1920px){
+        .not_found .logo_image{
+            width: 135px;
+        }
+        .not_found .image_area{
+            margin-top: 80px;
+            margin-bottom: 90px;
+        }
+    }
+    
+    /* Extra Huge large desktops */
+    @media (min-width: 1680px) and (max-width: 1919px){
+        
+    }
+    
+    /* Extra Huge large desktops */
+    @media (min-width: 1600px) and (max-width: 1679px){
+        
+    }
+    @media (min-width: 1600px) and (max-width: 1679px){
+      
+    }
+    
+    /* Extra large desktops and mac laptops*/
+    @media (min-width: 1400px) and (max-width: 1599px){
+        
+    }
+    
+    /* Extra large desktops and mac laptops*/
+    @media (min-width: 1200px) and (max-width: 1399px){
+        .not_found .logo_image{
+            width: 117px;
+        }
+        .not_found .image_area{
+            
+        }
+        .done_msg .contant_area .content h6{
+            font-size: 37px;
+        }
+        .done_msg .contant_area .content p {
+            width: 272px;
+        }
+    }
+    
+    
+    /* Landscape tablets and medium desktops */
+    @media (min-width: 992px) and (max-width: 1199px) {
+        .not_found .logo_image{
+            width: 117px;
+        }
+        .not_found .image_area{
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+        .done_msg .contant_area .icon{
+            height: 65px;
+            width: 65px;
+            line-height: 68px;
+        }
+        .done_msg .contant_area .content h6{
+            font-size: 32px;
+        }
+        .done_msg .contant_area .content p{
+            width: 100%;
+        }
+        .done_msg .contant_area .button a{
+            padding: 14px 70px;
+            font-size: 15px;
+        }
+    }
+    
+    /* Landscape tablets and ipad */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .not_found .logo_image{
+            width: 95px;
+        }
+        .not_found .image_area{
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+        .done_msg .contant_area .icon{
+            height: 63px;
+            width: 63px;
+            line-height: 65px;
+        }
+        .done_msg .contant_area .content h6{
+            font-size: 26px;
+        }
+        .done_msg .contant_area .content p{
+            padding-top: 15px;
+            width: 100%;
+        }
+        .done_msg .contant_area .button{
+            padding-top: 40px;
+        }
+        .done_msg .contant_area .button a{
+            padding: 12px 60px;
+            font-size: 14px;
+        }
+        .done_msg .contant_area .content{
+            width: 376px;
+        }
+    }
+    
+    /* Landscape phones and portrait tablets */
+    @media (min-width: 576px) and (max-width: 767px) {
+        .not_found .logo_image{
+            width: 95px;
+        }
+        .not_found .image_area{
+
+            margin-top: 55px;
+            margin-bottom: 30px;
+        }
+        .done_msg .contant_area .content{
+            padding-top: 15px;
+        }
+        .done_msg .contant_area .icon{
+            height: 63px;
+            width: 63px;
+            line-height: 65px;
+        }
+        .done_msg .contant_area .content h6{
+            padding-top: 20px;
+            font-size: 24px;
+        }
+        .done_msg .contant_area .content p{
+            padding-top: 10px;
+            width: 100%;
+        }
+        .done_msg .contant_area .button{
+            padding-top: 40px;
+        }
+        .done_msg .contant_area .button a{
+            padding: 12px 60px;
+            font-size: 14px;
+        }
+         .done_msg .contant_area .content{
+            width: 376px;
+            top: -10%;
+        }
+    }
+    
+    /* Landscape phones and portrait tablets */
+    @media (min-width: 361px) and (max-width: 575px) {
+        .not_found{
+            position: relative;
+            height: 100vh;
+        }
+        .not_found .logo_image{
+            width: 85px;
+        }
+        .not_found .image_area{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            position: absolute;
+            left: 0;right: 0;
+            top: 43%;
+         }
+        .done_msg .contant_area .content{
+            padding-top: 15px;
+        }
+        .done_msg .contant_area .icon{
+            height: 58px;
+            width: 58px;
+            line-height: 59px;
+        }
+        .done_msg .contant_area .icon i{
+            font-size: 22px;
+        }
+        .done_msg .contant_area .content h6{
+            padding-top: 20px;
+            font-size: 18px;
+        }
+        .done_msg .contant_area .content p{
+            padding-top: 10px;
+            width: 100%;
+        }
+        .done_msg .contant_area .button{
+            padding-top: 40px;
+        }
+        .done_msg .contant_area .button a{
+            padding: 12px 60px;
+            font-size: 14px;
+        }
+          .done_msg .contant_area .content{
+            width: 238px;
+            top: -28%;
+        }
+        .logo_image{
+            width: 84px;
+        }
+    }
+    
+    /* Smaller phones */
+    @media (max-width: 360px) {
+         .not_found{
+            position: relative;
+            height: 100vh;
+        }
+        .not_found .logo_image{
+            width: 80px;
+        }
+        .not_found .image_area{
+             margin-top: 0px;
+            margin-bottom: 0px;
+            position: absolute;
+            left: 0;right: 0;
+            top: 43%;
+        }
+        .done_msg .contant_area .content{
+            padding-top: 15px;
+        }
+        .done_msg .contant_area .icon{
+            height: 58px;
+            width: 58px;
+            line-height: 59px;
+        }
+        .done_msg .contant_area .icon i{
+            font-size: 22px;
+        }
+        .done_msg .contant_area .content h6{
+            padding-top: 20px;
+            font-size: 18px;
+        }
+        .done_msg .contant_area .content p{
+            padding-top: 10px;
+            width: 100%;
+        }
+        .done_msg .contant_area .button{
+            padding-top: 40px;
+        }
+        .done_msg .contant_area .button a{
+            padding: 12px 60px;
+            font-size: 14px;
+        }
+        .done_msg .contant_area .content{
+            width: 238px;
+            top: -28%;
+        }
+        .logo_image{
+            width: 84px;
+        }
+    }
+    
+    /* Smaller phones */
+    @media (max-width: 320px) {
+        
+    }    

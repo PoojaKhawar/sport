@@ -1,0 +1,130 @@
+.card{
+	.card-header{
+		@include clearfix();
+		.heading{
+			float: left;
+		}
+		.actions{
+			float: right;
+			width: 400px;
+			.input-group{
+				float: left;
+				width: calc(100% - 40px);
+			}
+			.action_dropdown{
+				float: right;
+				width: 32px;
+			}
+		}
+	}
+	.card-header{
+		&.view_header{
+		    border-bottom: 1px solid rgba(0, 0, 0, .05);
+	    }
+	}
+	&.attendance_icon_wrapper{
+		.card-widget-separator-wrapper{
+			.card-body{
+				@include clearfix();
+				padding: 1.5rem 1.5rem .6rem 1.5rem;
+				.icon_des{
+					@include clearfix();
+					ul{
+						margin: 0;
+						padding: 0;
+						@include clearfix();
+						li{
+							margin: 0;
+							padding: 0;
+							float: left;
+							list-style: none;
+							width: 200px;
+							display: flex;
+							text-align: center;
+							vertical-align: middle;
+							margin-bottom: 15px;
+							span{
+								display: block;
+								&.icon{
+									height: 25px;
+									width: 25px;
+									margin-right: 10px;
+									img{
+										width: 100%;
+									}
+								}
+								&.leave_text{
+									padding-top: 2px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+	
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+	
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+	
+}
+
+@media (min-width: 1280px) and (max-width: 1399px) {
+	
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 544px) and (max-width: 767px) {
+	
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 543px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+	
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    
+}
